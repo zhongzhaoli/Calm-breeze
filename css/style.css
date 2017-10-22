@@ -5,10 +5,15 @@
   padding: 0;
   font-weight: 300;
 }
-body {
+html, body {
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
   font-weight: 300;
+  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 body ::-webkit-input-placeholder {
   /* WebKit browsers */
@@ -37,16 +42,17 @@ body :-ms-input-placeholder {
   font-weight: 300;
 }
 .wrapper {
-  background: #50a3a2;
-  background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
-  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+  /*background: #50a3a2;*/
+  /*background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);*/
+  /*background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);*/
   position: absolute;
   top: 50%;
   left: 0;
   width: 100%;
   height: 400px;
   margin-top: -200px;
-  overflow: hidden;
+  /*overflow: hidden;*/
+  /*z-index: 100;*/
 }
 .wrapper.form-success .container h1 {
   -webkit-transform: translateY(85px);
@@ -133,7 +139,7 @@ form button:hover {
   width: 40px;
   height: 40px;
   background-color: rgba(255, 255, 255, 0.15);
-  bottom: -160px;
+  bottom: -350px;
   -webkit-animation: square 25s infinite;
   animation: square 25s infinite;
   -webkit-transition-timing-function: linear;
@@ -210,21 +216,21 @@ form button:hover {
 }
 @-webkit-keyframes square {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(80px);
+            transform: translateY(80px);
   }
   100% {
-    -webkit-transform: translateY(-700px) rotate(600deg);
-            transform: translateY(-700px) rotate(600deg);
+    -webkit-transform: translateY(-1000px) rotate(600deg);
+            transform: translateY(-1000px) rotate(600deg);
   }
 }
 @keyframes square {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(80px);
+            transform: translateY(80px);
   }
   100% {
-    -webkit-transform: translateY(-700px) rotate(600deg);
-            transform: translateY(-700px) rotate(600deg);
+    -webkit-transform: translateY(-1000px) rotate(600deg);
+            transform: translateY(-1000px) rotate(600deg);
   }
 }
